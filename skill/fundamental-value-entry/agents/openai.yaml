@@ -1,0 +1,13 @@
+interface:
+  display_name: Fundamental Value Monitor
+  short_description: Price-blind valuation, tiered monitoring, and controlled deep review
+  default_prompt: Use $fundamental-value-entry to maintain fixed intrinsic-value zones, monitor the tiered watchlist, and escalate only material events or abnormal moves into deep review.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+    - chatgpt
+    - codex
+    - api
+    - atlas
+  allow_implicit_invocation: true

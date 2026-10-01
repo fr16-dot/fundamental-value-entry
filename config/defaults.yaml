@@ -1,0 +1,17 @@
+schema_version: 4
+policy: PRICE_BLIND_DUAL_TRACK_V4
+valuation_models:
+  - TRADITIONAL
+  - HIGH_CONVEXITY
+monitoring_tiers:
+  - FOCUS
+  - CORE
+  - EXTENDED
+abnormal_move_threshold: 0.08
+focus_abnormal_move_threshold: 0.05
+execution_policy: RECOMMENDED_NE_EXECUTED
+close_review:
+  timezone: America/New_York
+  regular_market_time: "16:10"
+  timing_mode: exact_schedule
+  max_completed_runs_per_trading_date: 1

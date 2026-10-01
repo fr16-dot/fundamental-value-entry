@@ -1,0 +1,25 @@
+schema_version: 4
+
+tiers:
+  FOCUS:
+    daily_core: true
+    priority: highest
+    abnormal_move_threshold: 0.05
+  CORE:
+    daily_core: true
+    priority: standard
+    abnormal_move_threshold: 0.08
+  EXTENDED:
+    daily_core: false
+    priority: low
+    abnormal_move_threshold: 0.08
+
+focus_order: []
+
+capacity:
+  max_tracked_securities: 10
+
+notes:
+  - Tier controls monitoring priority, not intrinsic value.
+  - The full ticker universe lives in the registry/runtime data rather than being duplicated here.
+  - focus_order ships empty; the buyer populates it with their own tickers.
